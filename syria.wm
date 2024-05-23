@@ -1,0 +1,41 @@
+title Unsustained Syrian Ag Policy pre 2010
+style wardley
+
+anchor Syria [0.97, 0.56]
+anchor Syriaian Citizens [0.9,0.8]
+
+
+component Assad Regime [0.89, 0.44]
+component Hafez Gov [0.92, 0.26]
+component Bashar Gov [0.85, 0.38]
+component Agricultural Policy [0.74, 0.34] label [5, -10]
+component Food Security [0.93, 0.03]
+component Food Sovereignty [0.80, 0.09]
+
+component Oil Subsidy [0.61, 0.33]
+component Groundwater Pumps [0.51, 0.40] label [7, 15]
+
+component Agricultura Product [0.42, 0.20] label [8, -18]
+component 
+
+component Water [0.4,0.7]
+component Ground Water [0.38, 0.33] label [-44, 29]
+component River Water [0.38, 0.59] label [-37, 31]
+component Rain Water [0.38, 0.88] label [-30, 26]
+
+component Domestic Oil [0.04, 0.45]
+component Foreign Oil [0.06, 0.84]
+
+pipeline Water [0.30, 0.9]
+
+
+Syria -> Assad Regime
+Assad Regime -> Hafez Gov
+Assad Regime -> Bashar Gov
+Hafez Gov -> Agricultural Policy
+
+Food Security -> Food Sovereignty
+Food Sovereignty -> Agricultural Policy
+Agricultural Policy -> Oil Subsidy
+Oil Subsidy -> Groundwater Pumps
+Groundwater Pumps -> Ground Water
